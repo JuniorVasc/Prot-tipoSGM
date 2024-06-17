@@ -1,0 +1,76 @@
+
+/* Estilo para o corpo da página */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o cabeçalho principal */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #343a40;
+}
+
+/* Estilo para o formulário */
+#productForm {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os botões do formulário */
+#productForm .btn {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Estilo para a tabela de produtos */
+.table {
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Estilo para as células da tabela */
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Estilo para as linhas da tabela */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para o cabeçalho da tabela */
+.table thead th {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Estilo para o rodapé da tabela */
+.table tfoot td {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para campos do formulário */
+.form-group label {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}

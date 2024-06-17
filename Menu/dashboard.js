@@ -1,48 +1,37 @@
-
-  $(document).ready(function(){
-    $(".hamburger .hamburger__inner").click(function(){
-      $(".wrapper").toggleClass("active")
-    });
-
-    $(".top_navbar .fas").click(function(){
-      $(".profile_dd").toggleClass("active");
-    });
-
-    // Gráfico
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-      type: 'bar',
+document.addEventListener('DOMContentLoaded', (event) => {
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctx, {
+      type: 'bar', // ou qualquer tipo de gráfico que você está utilizando
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
-          ],
-          borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
-          ],
-          borderWidth: 1
-        }]
+          labels: ['Monitores', 'Toners', 'Disposetivos', 'Vazio', 'Vazio', 'Vazio'],
+          datasets: [{
+              label: 'Disposetivos',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                'rgba(255, 165, 0, 0.2)', // Laranja (semi-transparente)
+                'rgba(0, 0, 0, 0.2)', // Preto (semi-transparente)
+                'rgba(192, 192, 192, 0.2)', // Cinza (semi-transparente)
+                'rgba(128, 128, 128, 0.2)', // Cinza escuro (semi-transparente)
+                'rgba(128, 128, 128, 1)', // Cinza escuro
+                'rgba(255, 165, 0, 0.2)'  // Laranja (semi-transparente)
+              ],
+              borderColor: [
+                 'rgba(255, 165, 0, 1)', // Laranja
+                'rgba(0, 0, 0, 1)', // Preto
+                'rgba(0, 0, 0, 1)', // Preto
+                'rgba(128, 128, 128, 1)', // Cinza escuro
+                'rgba(128, 128, 128, 1)', // Cinza escuro
+                'rgba(255, 165, 0, 1)'  // Laranja
+              ],
+              borderWidth: 1
+          }]
       },
       options: {
-        scales: {
-          y: {
-            beginAtZero: true
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
           }
-        }
       }
-    });
   });
-
+});

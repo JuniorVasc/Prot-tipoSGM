@@ -1,28 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-        <title> CSS Sidebar Menu with icons Example</title>
-	<link rel="stylesheet" href="styles.css">
-	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  
-    <!-- SideBar-Menu CSS -->
+    <meta charset="UTF-8">
+    <title>CSS Sidebar Menu with icons Example</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script>
-		$(document).ready(function(){
-			$(".hamburger .hamburger__inner").click(function(){
-			  $(".wrapper").toggleClass("active")
-			})
-
-			$(".top_navbar .fas").click(function(){
-			   $(".profile_dd").toggleClass("active");
-			});
-		})
-	</script>
+    <script src="horasbarras2.js"></script>
+    <script src="dashboard.js"></script>
 </head>
 <body>
 
@@ -39,9 +28,15 @@
       <div class="logo">
        GENIUSSTOCK
       </div>
+      <div class="current_time"></div>
+      
       <div class="right_menu">
         <ul>
-          <li><i class="fas fa-user"></i>
+          <li>
+            <i class="fas fa-bell"></i>
+          </li>
+          <li>
+            <i class="fas fa-user"></i>
             <div class="profile_dd">
                <div class="dd_item">Profile</div>
                <div class="dd_item">Change Password</div>
@@ -79,43 +74,45 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="Relatótios/Relatorios.html">
                   <span class="icon"><i class="fab fa-elementor"></i></span>
+                  <span class="title">Relatórios</span>
+                </a>
+              </li>
+              <li>
+                <a href="Telascadastro/telaCadDisposetivos.html">
+                  <span class="icon"><i class="fas fa-laptop"></i></span>
+                  <span class="title">Dispositivos</span>
+                </a>
+              </li>
+              <li>
+                <a href="Telascadastro/telaCadMonitores.html">
+                  <span class="icon"><i class="fas fa-desktop"></i></span>
+                  <span class="title"> Ent. Monitores</span>
+                </a>
+                <a href="Telascadastro/telaCadMonitoresDEV.html">
+                  <span class="icon"><i class="fas fa-undo-alt"></i></span>
+                  <span class="title"> Dev. Monitores</span>
+                </a>
+              </li>
+              <li>
+                <a href="Telascadastro/telaCadToners.html">
+                  <span class="icon"><i class="fa fa-fill-drip"></i></span>
                   <span class="title">Toners</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="icon"><i class="fas fa-chart-pie"></i></span>
-                  <span class="title">Estoque</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="icon"><i class="fas fa-border-all"></i></span>
-                  <span class="title">Tabelas</span>
                 </a>
               </li>
             </ul>
           </div>
       </div>
-      <div class="container">
-          
-          	<header class="intro">
-	
-	</div>
-  <div class="container">
-    <canvas id="myChart" width="400" height="200"></canvas>
-  </div>
-  
-	</header>
-          
-       
+      <div class="container dashboard-container">
+          <header class="intro">
+          </header>
+          <div class="content">
+            <canvas id="myChart" width="400" height="200"></canvas>
+          </div>
       </div>
   </div>
-  
-</div>	
- 
+</div>  
 
 </body>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Estoque</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="telacadtoners.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Gestão de Toners TI</h2>
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productName">Marca</label>
+                <input type="text" class="form-control" id="marca" required>
+            </div>
+            <div class="form-group">
+                <label for="productDescription">TAG</label>
+                <input class="form-control" id="tagproduto" ></input>
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Cor</label>
+                <input type="text" class="form-control" id="precoproduto" required>
+            </div>
+            <div class="form-group">
+                <label for="productQuantity">Quantidade</label>
+                <input type="text" class="form-control" id="quantidadeproduto" required>
+            </div>
+            <div class="form-group">
+                <label for="productCategory">Salas</label>
+                <input type="text" class="form-control" id="salasproduto" required>
+            </div>
+            
+            <button type="button" class="btn btn-primary" >Adicionar</button>
+            <button type="button" class="btn btn-warning" >Editar</button>
+            <button type="button" class="btn btn-danger" >Remover</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+        </form>
+
+        <h3 class="mt-5">Lista de Produtos</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>TAG</th>
+                    <th>Cor</th>
+                    <th>Quantidade</th>
+                    <th>Salas</th>
+                     
+                </tr>
+            </thead>
+            <tbody id="productTableBody">
+                <!-- Produtos serão listados aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    
+</body>
+</html>
