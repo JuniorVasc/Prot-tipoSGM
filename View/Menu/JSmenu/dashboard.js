@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const myChart = new Chart(ctx, {
       type: 'bar', // ou qualquer tipo de gráfico que você está utilizando
       data: {
-          labels: ['Monitores', 'Toners', 'Disposetivos', 'Vazio', 'Vazio', 'Vazio'],
+          labels: ['Monitores', 'Toners', 'Dispositivos', 'Vazio', 'Vazio', 'Vazio'],
           datasets: [{
               label: 'Disposetivos',
               data: [12, 19, 3, 5, 2, 3],
