@@ -16,20 +16,20 @@
 <body>
     <div class="main">
         <div class="container">
-            <form id="loginForm">
+            <form id="loginForm" action="Logicalogin/login.php" method="post">
                 <h1>TI Stock</h1>
                 <p>Por favor insira o seu nome de usuário</p>
                 <div class="form-control">
-                  <input type="text" required>
+                  <input type="text" name="username" required>
                   <label>Nome do Usúario</label>
                 </div>
         
                 <div class="form-control">
-                  <input type="password" required>
+                  <input type="password" name="password" required>
                   <label>Palavra-passe</label>
                 </div>
         
-                <button id="loginButton" class="btn">Entrar</button>
+                <button type="submit" class="btn">Entrar</button> <!-- Alterando o tipo de botão para submit -->
 
                 <div class="social-icons">
                     <a href="https://github.com" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
@@ -54,7 +54,7 @@
                   <label>Password</label>
                 </div>
         
-                <button class="btn">Login</button>
+               
         
                 <p class="text">Already have an account? <a href="#" onclick="login()">Login</a> </p>
             </form>
